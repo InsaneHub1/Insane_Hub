@@ -1,0 +1,226 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("INSANE HUB")
+
+local serv = win:Server("Main", "")
+       
+local tgls = serv:Channel("Auto farm")
+
+tgls:Label("Auto Farm")
+
+tgls:Seperator()
+
+tgls:Toggle("Auto-Farm",false, function(bool)
+print(bool)
+_G.FARM = false-- true เปิด | false ปิด
+
+while _G.FARM do
+    
+
+    
+    
+local args = {
+    [1] = "swingKatana" 
+}
+
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(unpack(args))
+
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(72.242256164551, 21.248119354248, -44.895538330078) --path
+
+
+
+wait()
+end
+end)
+
+
+
+local btns = serv:Channel("Teleport")
+
+btns:Label("Information.")
+
+btns:Button("Lobby", function()
+DiscordLib:Notification("Notification", "You Have Go To Lobby!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (20.0813637, 3.19600391, 6.71723509, 0.551717818, 1.50945905e-08, -0.834030867, -2.64207678e-08, 1, 6.20819784e-10, 0.834030867, 2.16932179e-08, 0.551717818)
+end)
+
+btns:Button("Shop", function()
+DiscordLib:Notification("Notification", "You Have Go To Shop!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (85.4302826, 3.23800492, 29.7847805, 0.0246926341, 5.45297307e-10, -0.999695063, 5.02627488e-11, 1, 5.46705237e-10, 0.999695063, -6.37469869e-11, 0.0246926341)
+end)
+
+btns:Button("Skill", function()
+DiscordLib:Notification("Notification", "You Have Go To Skill!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (62.0146561, 2.99800396, 103.217384, 0.0675897896, 2.42660523e-08, -0.997713447, -1.20408608e-08, 1, 2.35059652e-08, 0.997713447, 1.04245643e-08, 0.0675897896)
+end)
+
+btns:Button("Sell", function()
+DiscordLib:Notification("Notification", "You Have Go To Sell!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (62.3995247, 86.808342, -45.6499062, 0.558290958, -9.71466818e-08, -0.829645216, 4.57962983e-08, 1, -8.6276664e-08, 0.829645216, 1.01728004e-08, 0.558290958)
+end)
+
+btns:Seperator()
+
+btns:Label("Safe Zone.")
+
+btns:Button("Safe Zone", function()
+DiscordLib:Notification("Notification", "You Have Go To Safe Zone!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (-44.4370003, 0.239999995, 121.276001, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627)
+end)
+
+btns:Seperator()
+
+btns:Label("Teleport")
+
+btns:Button("Teleport Zone", function()
+DiscordLib:Notification("Notification", "You Have Go To Teleport Zone!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (-158.935486, 3.23800492, 30.1696491, 0.0535433181, 7.21948439e-08, 0.998565555, -5.49043344e-09, 1, -7.20041626e-08, -0.998565555, -1.62721603e-09, 0.0535433181)
+end)
+
+btns:Seperator()
+
+
+
+
+
+
+
+
+
+btns:Label("Map")
+
+btns:Button("Enchanted Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Enchanted Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (45.8419991, 787.232178, -151.813995, -0.766061664, -0, -0.642767608, 0, -1.00000048, 0, -0.642767608, 0, 0.766061246)
+end)
+
+btns:Button("Astral Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Astral Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (232.594055, 2044.78235, 266.41507, -0.258864403, 0, 0.965913713, 0, -1, 0, 0.965913713, 0, 0.258864343)
+end)
+
+btns:Button("Mystical Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Mystical Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (183.842133, 4070.43237, 44.2856903, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Space Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Space Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (141.994003, 5686.7334, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Tundra Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Tundra Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (141.994003, 9314.7334, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Eternal Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Eternal Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (141.994003, 13709.5869, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Sandstorm", function()
+DiscordLib:Notification("Notification", "You Have Go To Sandstorm!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (141.994003, 17715.8828, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("ThunderStorm", function()
+DiscordLib:Notification("Notification", "You Have Go To ThunderStorm!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (141.994003, 24099.5762, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Aucient Inferno Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Aucient Inferno Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 28292.5195, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Midnight Shadow Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Midnight Shadow Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 33243.2109, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Mythical Souls Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Mythical Souls Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 39353.8047, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Winter Wonder Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Winter Wonder Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 46046.7891, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Golden Master Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Golden Master Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 52643.9961, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Dragon Legend Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Dragon Legend Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 59630.9141, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Cybernetic Legends Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Cybernetic Legends Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 66705.4063, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Skystorm Ultraus Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Skystorm Ultraus Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 70307.3984, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Chaos Legends Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Chaos Legends Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 74479.0938, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Soul Fusion Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Soul Fusion Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 79783.2266, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Dark Elements Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Dark Elements Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 83235.2266, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Button("Inner Peace Island", function()
+DiscordLib:Notification("Notification", "You Have Go To Inner Peace Island!", "Ok!")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (140.093933, 87087.3125, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+end)
+
+btns:Label("END")
+
+local sldrs = serv:Channel("Misc")
+
+local sldr = sldrs:Slider("Walk Speed!", 0, 1000, 500, function(t)
+print(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
+end)
+
+sldrs:Button("Change to 50", function()
+sldr:Change(5)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+sldrs:Button("Change to 500", function()
+sldr:Change(500)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+end)
+
+local sldr = sldrs:Slider("JumpPower!", 0, 1000, 500, function(t)
+print(t)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 1000
+end)
+
+sldrs:Button("Change to 500", function()
+sldr:Change(50)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+sldrs:Button("Change to 500", function()
+sldr:Change(500)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+end)
