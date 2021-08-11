@@ -12,7 +12,7 @@ tgls:Seperator()
 
 tgls:Toggle("Auto-Farm",false, function(bool)
 print(bool)
-_G.FARM = false-- true เปิด | false ปิด
+_G.FARM = true-- true เปิด | false ปิด
 
 while _G.FARM do
     
